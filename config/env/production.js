@@ -9,6 +9,8 @@
  * any private information to this file!
  *
  */
+const dotenv = require('dotenv');
+dotenv.config();
 
 module.exports = {
 
@@ -25,7 +27,7 @@ module.exports = {
    * Set the port in the production environment to 80                        *
    ***************************************************************************/
 
-  // port: 80,
+  port: process.env.PORT,
 
   /***************************************************************************
    * Set the log level in production environment to "silent"                 *
